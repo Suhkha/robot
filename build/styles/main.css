@@ -1,0 +1,8 @@
+.button__tickets {
+  display: inline-block;
+  position: relative;
+  padding: 15px;
+}
+.button__tickets--pink {
+  background-color: #e81e7c;
+}
