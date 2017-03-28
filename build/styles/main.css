@@ -1,12 +1,18 @@
+.logo {
+  opacity: 0;
+}
 .button__tickets {
   display: inline-block;
   position: relative;
-  padding: 15px;
+  padding: 15px 50px 15px 15px;
   border: none;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 .button__tickets--pink {
   background-color: #e81e7c;
   color: #fff;
+  font-size: 16px;
 }
 .button__tickets--icon {
   vertical-align: middle;
@@ -14,8 +20,13 @@
   top: 0;
   right: 0;
   display: block;
-  width: 15px;
+  width: 35px;
   height: 100%;
-  padding-top: 2px;
+  padding-top: 7px;
   text-align: center;
+  font-size: 25px;
+}
+.button__tickets--pink:hover {
+  background-color: #ce5d91;
+  color: #fff;
 }
