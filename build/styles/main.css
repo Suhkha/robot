@@ -1,6 +1,3 @@
-.logo {
-  opacity: 0;
-}
 .button__tickets {
   display: inline-block;
   position: relative;
@@ -27,6 +24,62 @@
   font-size: 25px;
 }
 .button__tickets--pink:hover {
-  background-color: #ce5d91;
+  background-color: #d01b6f;
+}
+.activities--subtitle {
+  color: #e81e7c;
+}
+.about--subtitle {
+  color: #fff;
+}
+#activities,
+.button__tickets,
+#slide,
+#about,
+#footer {
+  margin-bottom: 40px;
+}
+#about,
+#footer {
+  background-color: #0fbc71;
+  padding: 60px 20px;
+  color: #fff;
+  margin: 0;
+}
+#footer {
+  background-color: #2b2b24;
+  padding: 40px 20px;
+  text-align: center;
+}
+#footer a {
+  color: #e81e7c;
+  cursor: pointer;
+}
+#footer a:hover {
+  color: #e681b0;
+}
+#footer .social__media {
+  font-size: 30px;
+  color: #fff;
+  padding: 10px;
+}
+#footer .social__media:hover {
+  color: #fff;
+}
+#footer #up {
+  margin-top: 30px;
+  font-size: 14px;
+}
+#footer .square {
+  border: solid 1px #fff;
+  height: auto;
+  width: 30px;
+  padding: 5px 10px;
+  display: inline-block;
+}
+#footer .square a {
+  color: #fff;
+}
+#footer .square a:hover {
   color: #fff;
 }

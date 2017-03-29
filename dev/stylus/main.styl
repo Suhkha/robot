@@ -1,5 +1,9 @@
-.logo 
-	opacity 0
+$light_pink = rgb(230, 129, 176);
+$pink = rgba(232, 30, 124, 1);
+$dark_pink = rgba(208, 27, 111, 1);
+$green = rgba(15, 188, 113, 1);
+$black = rgba(43, 43, 36, 1);
+
 .button__tickets
 	display inline-block
 	position relative
@@ -7,7 +11,7 @@
 	border none
 	transition all 0.3s ease 0s
 	&--pink
-		background-color rgba(232, 30, 124, 1)
+		background-color $pink
 		color white
 		font-size 16px
 	&--icon
@@ -22,6 +26,50 @@
 		text-align center
 		font-size 25px
 	&--pink:hover
-		background-color rgba(206, 93, 145, 1)
-		color white
+		background-color $dark_pink
 		
+.activities--subtitle
+	color $pink
+
+.about--subtitle
+	color white
+
+#activities, .button__tickets, #slide, #about
+	margin-bottom 40px
+
+#about
+	background-color $green
+	padding 60px 20px
+	color white
+	margin 0
+
+#footer
+	@extend #about
+	background-color $black
+	padding 40px 20px
+	text-align center
+	
+	a
+		color $pink
+		cursor pointer
+		&:hover
+			color $light_pink
+	.social__media
+		font-size 30px
+		color white
+		padding 10px
+		&:hover
+			color white 
+	#up
+		margin-top 30px
+		font-size 14px
+	.square
+		border solid 1px white
+		height auto
+		width 30px
+		padding 5px 10px
+		display inline-block
+		a
+			color white
+			&:hover
+				color white
