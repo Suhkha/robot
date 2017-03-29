@@ -5,7 +5,8 @@
   border-radius: 0;
 }
 .button__tickets {
-  display: inline-block;
+  display: block;
+  margin: 0 auto;
   position: relative;
   padding: 15px 50px 15px 15px;
   border: none;
