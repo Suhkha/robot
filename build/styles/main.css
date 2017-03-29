@@ -1,3 +1,9 @@
+.input__tickets {
+  width: 300px;
+  height: 50px;
+  margin: 15px auto;
+  border-radius: 0;
+}
 .button__tickets {
   display: inline-block;
   position: relative;

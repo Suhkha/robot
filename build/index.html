@@ -18,7 +18,7 @@
 				<img src="images/logo.png" class="img-responsive logo" alt="Konectica: El mejor evento de tecnología para niños.">
 			</header>
 
-			<button class="button__tickets button__tickets--pink">
+			<button class="button__tickets button__tickets--pink" data-remodal-target="tickets">
 				<span>Obtén tus entradas</span> 
 				<span class="button__tickets--icon"><i class="icon fa fa-angle-double-right"></i></span>
 			</button>
@@ -60,9 +60,9 @@
 
 						<section id="#slide">
 							<ul class="bxslider">
-								<li><img src="/images/slide/bien_slide_uno.jpg" class="img-responsive" /></li>
-								<li><img src="/images/slide/bien_slide_dos.jpg" class="img-responsive" /></li>
-								<li><img src="/images/slide/bien_slide_tres.jpg" class="img-responsive" /></li>
+								<li><img src="images/slide/bien_slide_uno.jpg" class="img-responsive" /></li>
+								<li><img src="images/slide/bien_slide_dos.jpg" class="img-responsive" /></li>
+								<li><img src="images/slide/bien_slide_tres.jpg" class="img-responsive" /></li>
 							</ul>
 						</section>
 					</div>
@@ -112,24 +112,44 @@
 					</main>
 
 					<!--Modal-->
-					<div class="remodal" data-remodal-id="modal" role="dialog" aria-labelledby="modal__title" aria-describedby="modal1Desc">
+					<div class="remodal" data-remodal-id="tickets" role="dialog" aria-labelledby="modal__title" aria-describedby="modal1Desc" data-remodal-options="closeOnOutsideClick: false">
 					  <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
 					  <div>
 					    <h2 id="modal__title">Consigue tus entradas</h2>
 					    <p id="modal1Desc">
 					      ¡Muy pronto tendremos nuestro evento! Registra tus datos para seguir en contacto y obtén un descuento en tu entrada.
 					    </p>
-					    <form>
-					    	<input type="text" name="name" placeholder="Nombre">
-					    	<input type="text" name="email" placeholder="Email">
-					    	<input type="text" name="city" placeholder="Ciudad">
+					    <form method="POST" action="save.php">
+					    	<input type="text" required="required" autocomplete="off" class="form-control input__tickets" name="name" placeholder="Nombre">
+					    	<input type="email" required="required" autocomplete="off" class="form-control input__tickets" name="email" placeholder="Email">
+					    	<input type="text" required="required" autocomplete="off" class="form-control input__tickets" name="city" placeholder="Ciudad">
 
-					    	<button type="submit">Registrarme</button>
+					    	<button type="submit" class="button__tickets button__tickets--pink">
+					    		<span>Registrarme</span>
+					    		<span class="button__tickets--icon"><i class="icon fa fa-angle-double-right"></i></span>
+					    	</button>
 					    </form>
 					  </div>
-					  <br>
-					  <button data-remodal-action="cancel" class="remodal-cancel">Cancel</button>
-					  <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
+					</div>
+
+					<div class="remodal" data-remodal-id="error" role="dialog" aria-labelledby="modal__title" aria-describedby="modal1Desc">
+					  <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+					  <div>
+					    <h2 id="modal__title">Error</h2>
+					    <p id="modal1Desc">
+					      Ha ocurrido un error. Intenta mas tarde. 
+					    </p>
+					  </div>
+					</div>
+
+					<div class="remodal" data-remodal-id="thanks" role="dialog" aria-labelledby="modal__title" aria-describedby="modal1Desc">
+					  <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+					  <div>
+					    <h2 id="modal__title">Gracias</h2>
+					    <p id="modal1Desc">
+					      Tu registro ha sido guardado. Espera noticias de nosotros muy pronto. 
+					    </p>
+					  </div>
 					</div>
 
 					<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
