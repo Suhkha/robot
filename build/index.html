@@ -6,6 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" href="styles/bootstrap.min.css">
 	<link rel="stylesheet" href="lib/bxslider/css/jquery.bxslider.css" />
+	<link rel="stylesheet" href="lib/remodal/src/remodal.css"/>
+	<link rel="stylesheet" href="lib/remodal/src/remodal-default-theme.css"/>
+	
 	<link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
@@ -108,9 +111,31 @@
 						</footer>
 					</main>
 
+					<!--Modal-->
+					<div class="remodal" data-remodal-id="modal" role="dialog" aria-labelledby="modal__title" aria-describedby="modal1Desc">
+					  <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+					  <div>
+					    <h2 id="modal__title">Consigue tus entradas</h2>
+					    <p id="modal1Desc">
+					      ¡Muy pronto tendremos nuestro evento! Registra tus datos para seguir en contacto y obtén un descuento en tu entrada.
+					    </p>
+					    <form>
+					    	<input type="text" name="name" placeholder="Nombre">
+					    	<input type="text" name="email" placeholder="Email">
+					    	<input type="text" name="city" placeholder="Ciudad">
+
+					    	<button type="submit">Registrarme</button>
+					    </form>
+					  </div>
+					  <br>
+					  <button data-remodal-action="cancel" class="remodal-cancel">Cancel</button>
+					  <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
+					</div>
+
 					<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
 					<script src="lib/bxslider/js/jquery.bxslider.js"></script>
+					<script src="lib/remodal/src/remodal.js"></script>
 					<script src="https://use.fontawesome.com/be7e763425.js"></script>
 					<script src="scripts/main.js"></script>
 				</body>
