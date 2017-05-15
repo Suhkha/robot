@@ -10,7 +10,6 @@
   position: relative;
   padding: 15px 50px 15px 15px;
   border: none;
-  -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
 .button__tickets--pink {
@@ -48,7 +47,7 @@
 }
 #about,
 #footer {
-  background-color: #6c62a1;
+  background-color: #0fbc71;
   padding: 60px 20px;
   color: #fff;
   margin: 0;
