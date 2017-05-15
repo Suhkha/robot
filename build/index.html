@@ -8,8 +8,10 @@
 	<link rel="stylesheet" href="lib/bxslider/css/jquery.bxslider.css" />
 	<link rel="stylesheet" href="lib/remodal/src/remodal.css"/>
 	<link rel="stylesheet" href="lib/remodal/src/remodal-default-theme.css"/>
-	
 	<link rel="stylesheet" href="styles/main.css">
+
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
 	<main id="home">
@@ -105,14 +107,22 @@
 					      ¡Muy pronto tendremos nuestro evento! Registra tus datos para seguir en contacto y obtén un descuento en tu entrada.
 					    </p>
 					    <form method="POST" action="save.php">
-					    	<input type="text" required="required" autocomplete="off" class="form-control input__tickets" name="name" placeholder="Nombre completo">
-					    	<input type="email" required="required" autocomplete="off" class="form-control input__tickets" name="email" placeholder="Email">
-					    	<input type="text" required="required" autocomplete="off" class="form-control input__tickets" name="city" placeholder="Ciudad">
+					    	<div class="row">
+					    		<div class="col-xs-12">	
+						    		<input type="text" required="required" autocomplete="off" class="form-control input__tickets" name="name" placeholder="Nombre completo">
+						    	</div>
+						    	<div class="col-xs-12">	
+						    		<input type="email" required="required" autocomplete="off" class="form-control input__tickets" name="email" placeholder="Email">
+						    	</div>
+						    	<div class="col-xs-12">	
+						    		<input type="text" required="required" autocomplete="off" class="form-control input__tickets" name="city" placeholder="Ciudad">
+						    	</div>
 
-					    	<button type="submit" class="button__tickets button__tickets--pink">
-					    		<span>Registrarme</span>
-					    		<span class="button__tickets--icon"><i class="icon fa fa-angle-double-right"></i></span>
-					    	</button>
+						    	<button type="submit" class="button__tickets button__tickets--pink">
+						    		<span>Registrarme</span>
+						    		<span class="button__tickets--icon"><i class="icon fa fa-angle-double-right"></i></span>
+						    	</button>
+					    	</div>
 					    </form>
 					  </div>
 					</div>
